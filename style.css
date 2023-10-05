@@ -1,8 +1,10 @@
-/*CSS Reset*/
-
 /*font-family: 'AR One Sans', sans-serif;
 font-family: 'Fredoka', sans-serif;
 font-family: 'Livvic', sans-serif;*/
+
+/*colore email rgb(63, 193, 255)*/
+
+/*CSS Reset*/
 
 *{
     padding: 0;
@@ -10,15 +12,14 @@ font-family: 'Livvic', sans-serif;*/
     box-sizing: border-box;
 }
 
-main {
+header,main{
     background-color: white;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     font-family: 'Fredoka', sans-serif;
 }
 
 .main-title {
-    font-family: 'Fredoka', sans-serif;
     font-weight: 700;
     color: red;
     text-align: center;
@@ -27,4 +28,49 @@ main {
 
 .main-text {
     text-align: center;
+}
+
+section#cards .columns .column-third {
+    float: left;
+    margin: 2rem;
+    width: 225px;
+    /*width: calc(100% / 3);*/
+    height: 100px;
+    background-color: rgb(15, 14, 23);
+    color: white;
+    display: inline-block;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+img {
+    height: 100px;
+    width: 30%;
+    display: inline-block;
+    float: left;
+
+}
+
+h3 {
+    display: block;
+    width: 70%;
+    float: left;
+    padding-top: 10px;
+    padding-left: 6px;
+    font-size: medium;
+}
+
+
+span {
+    display: block;
+    width: 70%;
+    float: left;
+    font-size:x-small;
+    padding-top: 10px;
+    padding-left: 6px;
 }
