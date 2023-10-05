@@ -9,3 +9,22 @@ font-family: 'Livvic', sans-serif;*/
     margin: 0;
     box-sizing: border-box;
 }
+
+main {
+    background-color: white;
+    width: 60%;
+    margin: 0 auto;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.main-title {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    color: red;
+    text-align: center;
+    padding: 1rem;
+}
+
+.main-text {
+    text-align: center;
+}
