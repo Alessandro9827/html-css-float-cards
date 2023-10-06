@@ -1,4 +1,4 @@
-/* RESET */
+/* CSS Reset */
 *{
     margin: 0;
     padding: 0;
@@ -46,12 +46,6 @@ h1{
     color: white;
 }
 
-.card img{
-    height: 100%;
-    width: 35%;
-    float: left;
-}
-
 .card section.contents{
     float: left;
     width: calc(100% - 100px);
@@ -59,9 +53,19 @@ h1{
     padding: 8px 0 5px 5px;
 }
 
+/*Cards IMG modifier*/
+
+.card img{
+    height: 100%;
+    width: 35%;
+    float: left;
+}
+
 .card section.contents > *{
     margin-bottom: .5rem;
 }
+
+/*Cards text modifier*/
 
 .card-name{
     text-transform: uppercase;
