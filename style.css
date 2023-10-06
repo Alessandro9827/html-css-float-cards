@@ -1,76 +1,78 @@
-/*font-family: 'AR One Sans', sans-serif;
-font-family: 'Fredoka', sans-serif;
-font-family: 'Livvic', sans-serif;*/
-
-/*colore email rgb(63, 193, 255)*/
-
-/*CSS Reset*/
-
+/* RESET */
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-header,main{
-    background-color: white;
-    width: 70%;
-    margin: 0 auto;
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body{
     font-family: 'Fredoka', sans-serif;
 }
 
-.main-title {
-    font-weight: 700;
+main > header{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+h1{
+    margin-bottom: 2rem;
+}
+
+.main-title{
     color: red;
-    text-align: center;
-    padding: 1rem;
 }
 
-.main-text {
-    text-align: center;
+.container{
+    width: 75%;
+    margin: 0 auto;
 }
 
-section#cards .columns .column-third {
+.column{
     float: left;
-    margin: 2rem;
-    width: 225px;
-    /*width: calc(100% / 3);*/
-    height: 100px;
+    width: calc(100% / 3);
+    height: calc(100px + 2.5rem);
+    padding: 1.25rem;
+}
+
+.card{
+    height: 100%;
     background-color: rgb(15, 14, 23);
     color: white;
-    display: inline-block;
 }
 
-.clearfix::after{
-    content: "";
-    display: block;
-    clear: both;
-
-}
-
-img {
-    height: 100px;
-    width: 30%;
-    display: inline-block;
+.card img{
+    height: 100%;
+    width: 35%;
     float: left;
-
 }
 
-h3 {
-    display: block;
-    width: 70%;
+.card section.contents{
     float: left;
-    padding-top: 10px;
-    padding-left: 6px;
-    font-size: medium;
+    width: calc(100% - 100px);
+    height: 100%;
+    padding: 8px 0 5px 5px;
 }
 
+.card section.contents > *{
+    margin-bottom: .5rem;
+}
 
-span {
-    display: block;
-    width: 70%;
-    float: left;
-    font-size:x-small;
-    padding-top: 10px;
-    padding-left: 6px;
+.card-name{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.card-email{
+    color: rgb(63, 193, 255);
+    font-size: x-small;
+}
+
+.card-work{
+    font-size: small;
 }

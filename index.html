@@ -3,64 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team</title>
+
+    <title>Floating Cards</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Fredoka:wght@300;400;500;700&family=Livvic:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--Titolo-->
-    <header>
-        <h1 class="main-title">Meet Our Team</h1>
-    </header>
     <main>
-        <!--Paragrafo principale-->
-        <p class="main-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem impedit nobis quo excepturi officia praesentium, repellat recusandae eligendi! Explicabo, officiis accusamus autem dolore neque natus voluptatibus animi tenetur ex officia?
-        </p>
-        <!--Biglietti con nome e info-->
-        <section id="cards">
-            <div class="columns clearfix">
-                <div class="column-third designer">
-                    <img src="./img/male1.png" alt="">
-                    <h3>MARCO BIANCHI</h3>
-                    <span>Designer</span>
-                    <span>marcobianchi@team.com</span>
-                </div>
-                <div class="column-third front-end">
-                    <img src="./img/female1.png" alt="">
-                    <h3>LAURA ROSSI</h3>
-                    <span>Front-end Developer</span>
-                    <span>mlaurarossi@team.com</span>
-                </div>
-                <div class="column-third back-end">
-                    <img src="./img/male2.png" alt="">
-                    <h3>GIORGIO VERDI</h3>
-                    <span>Back-end Developer</span>
-                    <span>marcobianchi@team.com</span>
-                </div>
-                <div class="column-third seo-specialist">
-                    <img src="./img/female2.png" alt="">
-                    <h3>MARTA IPSUM</h3>
-                    <span>SEO Specialist</span>
-                    <span>martaipsum@team.com</span>
-                </div>
-                <div class="column-third project-manager">
-                    <img src="./img/male3.png" alt="">
-                    <h3>ROBERTO LOREM</h3>
-                    <span>Project Manager</span>
-                    <span>roberolorem@team.com</span>
-                </div>
-                <div class="column-third analyst">
-                    <img src="./img/female3.png" alt="">
-                    <h3>DANIELA AMET</h3>
-                    <span>Analyst</span>
-                    <span>danielaamet@team.com</span>
-                </div>
+        <header class="container">
+            <h1 class="main-title">
+                Meet Our Team
+            </h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur voluptatum a similique nihil quas. Provident enim numquam aliquam laudantium ducimus. Unde aut ipsam iure molestias iusto praesentium! Pariatur, animi dolores.
+            </p>
+        </header>
+        <section class="main-content container clearfix">
+            <div class="column">
+                <article class="card clearfix">
+                    <img src="./img/male1.png" alt="Marco's picture">
+                    <section class="contents">
+                        <p class="card-name">Marco Bianchi</p>
+                        <p class="card-work">Designer</p>
+                        <p class="card-email">marcobianchi@team.com</p>
+                    </section>
+                </article>
             </div>
-        </section>    
+            <div class="column">
+                <article class="card clearfix">
+                    <img src="./img/female1.png" alt="Laura's picture">
+                    <section class="contents">
+                        <p class="card-name">Laura Rossi</p>
+                        <p class="card-work">Front-end Developer</p>
+                        <p class="card-email">laurarossi@team.com</p>
+                    </section>
+                </article>
+            </div>
+            <div class="column">
+                <article class="card clearfix">
+                    <img src="./img/male2.png" alt="Giorgio's picture">
+                    <section class="contents">
+                        <p class="card-name">Giorgio Verdi</p>
+                        <p class="card-work">Back-end Developer</p>
+                        <p class="card-email">giorgioverdi@team.com</p>
+                    </section>
+                </article>
+            </div>
+            <div class="column">
+                <article class="card clearfix">
+                    <img src="./img/female2.png" alt="Marta's picture">
+                    <section class="contents">
+                        <p class="card-name">Marta Ipsum</p>
+                        <p class="card-work">SEO Specialist</p>
+                        <p class="card-email">martaipsum@team.com</p>
+                    </section>
+                </article>
+            </div>
+            <div class="column">
+                <article class="card clearfix">
+                    <img src="./img/male3.png" alt="Roberto's picture">
+                    <section class="contents">
+                        <p class="card-name">Roberto Lorem</p>
+                        <p class="card-work">Project Manager</p>
+                        <p class="card-email">robertolorem@team.com</p>
+                    </section>
+                </article>
+            </div>
+            <div class="column">
+                <article class="card clearfix">
+                    <img src="./img/female3.png" alt="Daniela's picture">
+                    <section class="contents">
+                        <p class="card-name">Daniela Amet</p>
+                        <p class="card-work">Analyst</p>
+                        <p class="card-email">danielaamet@team.com</p>
+                    </section>
+                </article>
+            </div>
+
+        </section>
     </main>
+
 </body>
 </html>
